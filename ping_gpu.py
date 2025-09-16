@@ -1,6 +1,4 @@
-import os, torch, subprocess, shlex
-import torch.nn as nn
-from torch.nn import functional as F
+import torch
 
 print('-------- ping_gpu -------')
 print("torch.__version__:", torch.__version__)
