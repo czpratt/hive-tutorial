@@ -16,5 +16,5 @@ In your terminal, run: ``srun --ntasks=1 --time=01:00:00 --mem=16GB --cpus-per-t
 
 This activates an ``ipython`` like interface that allows you to execute anything with the allocated resources.
 
-#### Notes
-- Setting ``--partition=low`` practically guarentees you'll get resources faster, but at the cost of getting booted once a high priority user needs them. Setting ``--partition=high`` guarantees your job will finish once it starts, but at the cost of potentially taking up to a week for the resources to be allocated to you in my experience.
+#### Notes on partitions
+Setting ``--partition=low`` practically guarentees you'll get resources faster, but at the cost of getting booted once a high priority user needs them. Setting ``--partition=high`` guarantees your job will finish once it starts, but at the cost of potentially taking up to a week for the resources to be allocated to you in my experience.
