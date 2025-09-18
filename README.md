@@ -1,6 +1,6 @@
 The [HPC Documentation](https://docs.hpc.ucdavis.edu/) has proven to be very useful so far.
 
-Once you're logged into Hive, there are two ways to run your jobs:
+Once you're created an account on Hive, have your ``ssh-keygen`` implemented, and ensured you have the GPU friendly PyTorch version in your ``conda`` environment, there are two ways to run your jobs:
 1) ``sbatch`` : "Non-interactive" job execution
 2) ``srun``: "Interactive" job execution
 
@@ -17,4 +17,4 @@ In your terminal, run: ``srun --ntasks=1 --time=01:00:00 --mem=16GB --cpus-per-t
 This activates an ``ipython`` like interface that allows you to execute anything with the allocated resources.
 
 #### Notes on partitions
-Setting ``--partition=low`` practically guarentees you'll get resources faster, but at the cost of getting booted once a high priority user needs them. If ``--partition=high`` then your job is ensured to finish once it starts, but it could potentially take up to a week for the resources to be allocated in my experience.
+Setting ``--partition=low`` practically guarantees you'll get resources faster, but at the cost of getting booted once a high priority user needs them. If ``--partition=high`` then your job is ensured to finish once it starts, but it could potentially take up to a week for the resources to be allocated in my experience.
